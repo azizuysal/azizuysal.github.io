@@ -1,6 +1,6 @@
 ---
 author: azizuysal
-comments: false
+comments: true
 date: 2007-11-04 18:14:10+00:00
 layout: post
 link: https://azizuysal.wordpress.com/2007/11/04/wordpress-231-upgrade/

@@ -1,6 +1,6 @@
 ---
 author: azizuysal
-comments: false
+comments: true
 date: 2007-12-24 12:36:58+00:00
 layout: post
 link: https://azizuysal.wordpress.com/2007/12/24/installing-iphone-development-tools-toolchain-030-on-leopard-for-iphone-112/
@@ -14,12 +14,12 @@ tags:
 - iphone
 ---
 
-  
+
 
 
 ![hello.png](http://azizuysal.files.wordpress.com/2010/12/hello.png)
 
-  
+
 
 
 After [jailbreaking](/2007/12/iphone-jailbreak-and-upgrade-to-112.html) my iPhone recently, I'm now ready to install the development tools. At the end of this process, I'll finally be ready to start developing my own applications for the iPhone.

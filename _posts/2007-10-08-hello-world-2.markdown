@@ -1,6 +1,6 @@
 ---
 author: azizuysal
-comments: false
+comments: true
 date: 2007-10-08 02:25:56+00:00
 layout: post
 link: https://azizuysal.wordpress.com/2007/10/07/hello-world-2/

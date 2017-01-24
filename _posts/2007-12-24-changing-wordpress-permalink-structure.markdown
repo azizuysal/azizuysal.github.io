@@ -1,6 +1,6 @@
 ---
 author: azizuysal
-comments: false
+comments: true
 date: 2007-12-24 14:59:23+00:00
 layout: post
 link: https://azizuysal.wordpress.com/2007/12/24/changing-wordpress-permalink-structure/

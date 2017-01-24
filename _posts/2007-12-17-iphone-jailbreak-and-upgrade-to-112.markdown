@@ -1,6 +1,6 @@
 ---
 author: azizuysal
-comments: false
+comments: true
 date: 2007-12-17 05:02:22+00:00
 layout: post
 link: https://azizuysal.wordpress.com/2007/12/17/iphone-jailbreak-and-upgrade-to-112/
