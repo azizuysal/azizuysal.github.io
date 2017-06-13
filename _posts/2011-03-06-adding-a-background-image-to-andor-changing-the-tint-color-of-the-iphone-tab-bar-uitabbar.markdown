@@ -14,7 +14,7 @@ tags:
 - iphone
 ---
 
-![iPhone Screenshot](http://azizuysal.files.wordpress.com/2011/03/tabbartint.png)
+![iPhone Screenshot]({{ site.url }}/images/2011/03/tabbartint.png)
 
 
 

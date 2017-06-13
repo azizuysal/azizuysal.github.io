@@ -17,7 +17,7 @@ tags:
 
 
 
-![hello.png](http://azizuysal.files.wordpress.com/2010/12/hello.png)
+![hello.png]({{ site.url }}/images/2007/12/hello.png)
 
 
 

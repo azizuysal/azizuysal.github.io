@@ -13,7 +13,7 @@ tags:
 - iphone
 ---
 
-![screen.png](http://azizuysal.files.wordpress.com/2010/12/screen.png)
+![screen.png]({{ site.url }}/Images/2007/12/screen.png)
 
 Today, I decided to jailbreak my iPhone and start adding third party apps. Hopefully, I'll be adding my own apps soon. I tried to document the whole experience below. I am using a Mac, but the same steps apply to Windows users as well. Also note that I'm using an activated phone.
 
@@ -37,7 +37,7 @@ ssh root@10.0.1.197
 
 After supplying the default SSH password for root on 1.1.2 phones, "alpine", I was connected to my iPhone :) Here's the Terminl.app running "top" on the iPhone.
 
-![top.png](http://azizuysal.files.wordpress.com/2010/12/top.png)
+![top.png]({{ site.url }}/images/2007/12/top.png)
 
 If you're wondering how you'd find out the IP number for your phone, just go to Settings->Wi-Fi and select the network you're currently connected to. It will show you an info screen with the IP information.
 

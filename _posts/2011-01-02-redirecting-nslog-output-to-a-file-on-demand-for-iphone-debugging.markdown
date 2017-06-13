@@ -42,7 +42,7 @@ Please note that redirecting StdErr to a file will slow down your application, d
 
 
 
-```c
+```objc
 savedStdErr = dup(STDERR_FILENO);
 ```
 
@@ -54,7 +54,7 @@ And then, later when you want to revert output, you can do so like this:
 
 
 
-```c
+```objc
 fflush(stderr);
 dup2(savedStdErr, STDERR_FILENO);
 close(savedStdErr)
@@ -73,7 +73,7 @@ You can retrieve the saved file easily when you connect the device to your Mac v
 
 
 
-![get_file_from_device.png](http://azizuysal.files.wordpress.com/2011/01/get_file_from_device.png)
+![get_file_from_device.png](http://{{ site.url }}/images/2011/01/get_file_from_device.png)
 
 
 

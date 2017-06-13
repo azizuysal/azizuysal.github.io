@@ -15,7 +15,7 @@ tags:
 - blackberry
 ---
 
-![tour_front.png](http://azizuysal.files.wordpress.com/2010/12/tour-front.png)
+![tour_front.png]({{ site.url }}/images/2009/07/tour-front.png)
 
 
 Recently, I started developing a new [BlackBerry](http://www.blackberry.com/) project at work. Naturally, I wanted to setup a build environment on my beloved MacBook Pro. BlackBerry development is Java based, and Java is cross-platform, and so I assumed it would be an easy setup. Was I wrong! It took a lot of [research](http://www.slashdev.ca/2007/05/30/blackberry-development-with-ant-eclipse/) and trial-error; but in the end, I was successful and I wanted to share it here.
@@ -43,13 +43,13 @@ Now, fire up **eclipse**, select the ~/Development/BlackBerry folder as your wor
 Go to Java->Build Path->User Libraries and click New. Enter "BlackBerry 4.7" as the library name. Next click Add JARs and browse to your ~/Development/BlackBerry/SDK/net.rim.eide.componentpack4.7.0_4.7.0.46/components/lib folder and select net_rim_api.jar file. Also make sure to set the javadoc location to ~/Development/BlackBerry/SDK/net.rim.eide.componentpack4.7.0_4.7.0.46/components/docs/api folder so that you'll get proper documentation popups in eclipse.
 
 
-[![userlib.png](http://azizuysal.files.wordpress.com/2010/12/userlib.png)](http://azizuysal.files.wordpress.com/2010/12/userlib.png)
+[![userlib.png]({{ site.url }}/images/2009/07/userlib.png)]({{ site.url }}/images/2009/07/userlib.png)
 
 
 Next, download the latest version of [BlackBerry Ant Tools](http://bb-ant-tools.sourceforge.net/) and unzip it. Place the folder in your ~/Development/BlackBerry/SDK folder. Next, open Eclipse->Preferences again and then go to Ant->Runtime and click Add External JARs and browse to bb-ant-tools.jar file. Click OK and close all dialog windows.
 
 
-[![ant.png](http://azizuysal.files.wordpress.com/2010/12/ant.png)](http://azizuysal.files.wordpress.com/2010/12/ant.png)
+[![ant.png]({{ site.url }}/images/2009/07/ant.png)]({{ site.url }}/images/2009/07/ant.png)
 
 
 You also need to download a Mac OS binary of the _preverify.exe_ that is included in the BlackBerry JDE tools. The easiest way to do so is to download the [mpowerplayer sdk](http://mpowerplayer.com/sdk), which includes the **preverify** binary for Mac OS X. Just copy the preverify executable to your ~/Development/BlackBerry/SDK/net.rim.eide.componentpack4.7.0_4.7.0.46/components/bin folder from the mpp-sdk/osx/preverify folder. You can discard the rest of the sdk files if you wish.
@@ -131,7 +131,7 @@ Now, create a build.xml for bb-ant-tools. Go to File->New->Other, select XML and
 Go to Window->Show View->Ant to show the ant view and drag build.xml file into this view. You can now run the ant scripts by double-clicking on them. Double-click the build script, and you should see a BUILD SUCCESSFUL message in your Console window in eclipse.
 
 
-[![success.png](http://azizuysal.files.wordpress.com/2010/12/success.png)](http://azizuysal.files.wordpress.com/2010/12/success.png)
+[![success.png]({{ site.url }}/images/2009/07/success.png)]({{ site.url }}/images/2009/07/success.png)
 
 
 
@@ -182,7 +182,7 @@ Select gdiplus from the menu to install it. And finally, type the following to r
 You should now see the BlackBerry simulator running in wine:
 
 
-[![simulator.png](http://azizuysal.files.wordpress.com/2010/12/simulator.png)](http://azizuysal.files.wordpress.com/2010/12/simulator.png)
+[![simulator.png]({{ site.url }}/images/2009/07/simulator.png)]({{ site.url }}/images/2009/07/simulator.png)
 
 
 You can also try double-clicking load-simulator script in eclipse now and you should be able to see your project compiled and installed in the simulator.
