@@ -73,7 +73,7 @@ You can retrieve the saved file easily when you connect the device to your Mac v
 
 
 
-![get_file_from_device.png](http://{{ site.url }}/images/2011/01/get_file_from_device.png)
+![get_file_from_device.png]({{ site.url }}/images/2011/01/get_file_from_device.png)
 
 
 
