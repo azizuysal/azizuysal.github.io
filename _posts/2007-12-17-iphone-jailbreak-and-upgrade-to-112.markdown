@@ -13,7 +13,7 @@ tags:
 - iphone
 ---
 
-![screen.png]({{ site.url }}/Images/2007/12/screen.png)
+![screen.png]({{ site.url }}/images/2007/12/screen.png)
 
 Today, I decided to jailbreak my iPhone and start adding third party apps. Hopefully, I'll be adding my own apps soon. I tried to document the whole experience below. I am using a Mac, but the same steps apply to Windows users as well. Also note that I'm using an activated phone.
 
