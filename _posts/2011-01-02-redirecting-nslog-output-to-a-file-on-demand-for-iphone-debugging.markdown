@@ -23,11 +23,11 @@ Whenever you want to redirect NSLog output to a file, you can do so by using a s
 
 
 
-[sourcecode language="objc" light="true" wraplines="false"]
+```objc
 NSString *cachesDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 NSString *logPath = [cachesDirectory stringByAppendingPathComponent:@"application.log"];
 freopen([logPath cStringUsingEncoding:NSASCIIStringEncoding], "a+", stderr);
-[/sourcecode]
+```
 
 
 
@@ -42,9 +42,9 @@ Please note that redirecting StdErr to a file will slow down your application, d
 
 
 
-[sourcecode language="objc" light="true" wraplines="false"]
+```c
 savedStdErr = dup(STDERR_FILENO);
-[/sourcecode]
+```
 
 
 
@@ -54,11 +54,11 @@ And then, later when you want to revert output, you can do so like this:
 
 
 
-[sourcecode language="objc" light="true" wraplines="false"]
+```c
 fflush(stderr);
 dup2(savedStdErr, STDERR_FILENO);
 close(savedStdErr)
-[/sourcecode]
+```
 
 
 

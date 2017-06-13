@@ -28,14 +28,14 @@ The default UITabBar on iPhone has a black translucent tint which is suitable fo
 
 You can change the tint color of the tab bar as follows:  
 
-[sourcecode language="objc" wraplines="false"]
+```objc
 CGFloat width = self.tabBarController.tabBar.bounds.size.width;
 CGFloat height = self.tabBarController.tabBar.bounds.size.height;
 UIView *tabBarTint = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, width, height)];
 [tabBarTint setBackgroundColor:[UIColor blueColor]];
 [self.tabBarController.tabBar insertSubview:tabBarTint atIndex:0];
 [tabBarTint release];
-[/sourcecode]
+```
 
 
 
@@ -49,11 +49,11 @@ The trick is to insert the subview at index 0, behind the actual view of the tab
 
 With a slight variation of the above code, you can also add a pattern or a background image to the tab bar to have a more dramatic effect, as follows:  
 
-[sourcecode language="objc" wraplines="false"]
+```objc
 UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"concave.jpg"]];
 [self.tabBarController.tabBar insertSubview:imageView atIndex:0];
 [imageView release];
-[/sourcecode]
+```
 
 
 

@@ -31,7 +31,9 @@ After a couple of resets, the phone seemed stable and functioning, so I quit the
 
 After I installed OpenSSH, I launched the Terminal.app on my Mac and typed the following to connect to my phone wirelessly over ssh.
 
-[sourcecode language="bash" light="true" wraplines="false"]ssh root@10.0.1.197[/sourcecode]
+```bash
+ssh root@10.0.1.197
+```
 
 After supplying the default SSH password for root on 1.1.2 phones, "alpine", I was connected to my iPhone :) Here's the Terminl.app running "top" on the iPhone.
 

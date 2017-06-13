@@ -56,9 +56,9 @@ You also need to download a Mac OS binary of the _preverify.exe_ that is include
 
 Finally, add the ~/Development/BlackBerry/SDK/net.rim.eide.componentpack4.7.0_4.7.0.46/components/bin to your $PATH by editing the ~/.bash_profile file as follows:
 
-[sourcecode language="bash" light="true" wraplines="false"]
+```bash
 export PATH=${PATH}:/Users/aziz/Development/BlackBerry/SDK/net.rim.eide.componentpack4.7.0_4.7.0.46/components/bin
-[/sourcecode]
+```
 
 
 #### Building Your First BlackBerry App
@@ -68,7 +68,7 @@ You're now ready to compile your first BlackBerry application on your Mac. Creat
 
 Create a new package, name it com.azizuysal.HelloWorld. Then create a new class and name it HelloWorldApp.java. Here is the source code:
 
-[sourcecode language="java"]
+```java
 package com.azizuysal.HelloWorld;
 
 import net.rim.device.api.ui.UiApplication;
@@ -86,10 +86,10 @@ public class HelloWorldApp extends UiApplication {
 		new HelloWorldApp().enterEventDispatcher();
 	}
 }
-[/sourcecode]
+```
 
 Now, create a build.xml for bb-ant-tools. Go to File->New->Other, select XML and name it build.xml. Enter the following:
-[sourcecode language="xml" wraplines="false"]
+```xml
 <project name="Hello World App" default="build">
 	<taskdef resource="bb-ant-defs.xml" />
 
@@ -127,7 +127,7 @@ Now, create a build.xml for bb-ant-tools. Go to File->New->Other, select XML and
 		</exec>
 	</target>
 </project>
-[/sourcecode]
+```
 Go to Window->Show View->Ant to show the ant view and drag build.xml file into this view. You can now run the ant scripts by double-clicking on them. Double-click the build script, and you should see a BUILD SUCCESSFUL message in your Console window in eclipse.
 
 
@@ -141,43 +141,43 @@ Go to Window->Show View->Ant to show the ant view and drag build.xml file into t
 
 As I said before, we will be running the simulator in wine and we'll use MacPorts to install wine. So, first, download and run the appropriate [MacPorts installer](http://www.macports.org/install.php) for your system. Once you finish installing MacPorts, open Terminal and type the following command to install Wine via MacPorts (If you get an error message when you try to run **port** commands, make sure your .bash_profile is updated appropriately at the end of the MacPorts installation and your PATH variable contains the path to your MacPorts installation. Also make sure that you have an active internet connection):
 
-[sourcecode language="bash" light="true" wraplines="false"]
+```bash
 sudo port install wine
-[/sourcecode]
+```
 
 After **wine** is installed, type the following to install the **winetricks** package which we'll need in order to successfully run the BlackBerry simulator.
 
-[sourcecode language="bash" light="true" wraplines="false"]
+```bash
 sudo port install winetricks
-[/sourcecode]
+```
 
 You'll notice that MacPorts will also install quite a few more packages, as wine and winetricks depend on them.
 
 We'll need a shell script to run the simulator in wine easily, and the easiest way to create one is to copy the included windows batch file. Copy the ~/Development/BlackBerry/SDK/net.rim.eide.componentpack4.7.0_4.7.0.46/components/simulator/9530.bat file to 9530.sh file and edit it to read as follows:
 
-[sourcecode language="bash" light="true" wraplines="false"]
+```bash
 #!/bin/bash
 cd "`dirname $0`"
 /opt/local/bin/wine fledge.exe /app=Jvm.dll /handheld=9530 /session=9530 /app-param=DisableRegistration /app-param=JvmAlxConfigFile:9530.xml /data-port=0x4d44 /data-port=0x4d4e /pin=0x2100000A
-[/sourcecode]
+```
 
 Save the file and set its execute permission:
 
-[sourcecode language="bash" light="true" wraplines="false"]
+```bash
 chmod +x 9530.sh
-[/sourcecode]
+```
 
 Now, run winetricks and select gdiplus trick. Type in Terminal:
 
-[sourcecode language="bash" light="true" wraplines="false"]
+```bash
 winetricks
-[/sourcecode]
+```
 
 Select gdiplus from the menu to install it. And finally, type the following to run the simulator in wine:
 
-[sourcecode language="bash" light="true" wraplines="false"]
+```bash
 ~/Development/BlackBerry/SDK/net.rim.eide.componentpack4.7.0_4.7.0.46/components/simulator/9530.sh
-[/sourcecode]
+```
 
 You should now see the BlackBerry simulator running in wine:
 
@@ -193,11 +193,11 @@ You can also try double-clicking load-simulator script in eclipse now and you sh
 
 If you want to install additional BlackBerry simulators, you can download them from the BlackBerry website and use the following commands to install them:
 
-[sourcecode language="bash" light="true" wraplines="false"]
+```bash
 wine ~/Downloads/BlackBerry_Simulators_4.6.1.79_8350i.exe /extract
 wine msiexec /a ~/Downloads/SimPackageInstaller.msi /qn
 mv ~/.wine/drive_c/Program\ Files/Research\ In\ Motion ~/Development/BlackBerry/SDK/
-[/sourcecode]
+```
 
 Create a .sh script file as shown above to run the new simulator, and don't forget to update your build.xml file if you want to launch your projects in the new simulator automatically.
 
